@@ -1,0 +1,15 @@
+extends base.pug
+
+block scripts 
+    script(src='/static/index.js')
+
+block style 
+    style
+      include ../static/style.css
+
+block content
+    h1#contact Contact Us
+    form#Coform(action="/contact", method="post") 
+        input(type="text",class="myInput",name="name",placeholder="Enter Your Name")
+        input(type="text",class="myInput",name="email",placeholder="Enter Your Email")
+        input(type="text",class="myInput",name="phnum",placeholder="Enter Your Phone Number")

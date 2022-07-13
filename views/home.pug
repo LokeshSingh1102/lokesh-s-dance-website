@@ -1,0 +1,18 @@
+extends base.pug
+
+block scripts 
+    script(src='/static/index.js')
+
+block style
+    style
+      include ../static/style.css
+
+block content    
+    section#first
+          div Welcome to lokesh's Dance Academy
+          div Eat Sleep Dace Repeat
+    
+    section#second
+        h3 Our Sponsors 
+        div#sponsor
+          img(src="/static/logo1.png" ,class="logo-img")

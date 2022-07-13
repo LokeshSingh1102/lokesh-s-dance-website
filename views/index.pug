@@ -1,0 +1,30 @@
+//- index.pug
+//- indentation is imp 
+doctype html
+html
+  head
+    style
+      include ../static/style.css
+  body
+    nav#navbar.firstclass 
+        ul 
+            li #[a(href="/") Home]
+            li #[a(href="/") About]
+            li #[a(href="/") Services]
+            li #[a(href="/") Class Info]
+            li #[a(href="/") Contact Us]
+    
+    section#first
+          div Welcome to lokesh's Dance Academy
+          div Eat Sleep Dace Repeat
+    
+    section#second 
+        h3 Our Sponsors 
+        div#sponsor
+          img(src="/static/logo1.png" ,class="logo-img")
+    
+    script
+      include ../static/index.js
+
+    footer#footer
+      | Copyright &#169; 2019 LokeshAcademy.com | All Rights Reserved
