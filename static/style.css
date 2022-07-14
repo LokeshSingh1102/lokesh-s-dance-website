@@ -89,3 +89,10 @@
     padding: 6px;
     min-width: 33%;
 }
+.Cbtn{
+    font-size: 13px;
+    padding: 6px;
+    margin: 8px;
+    border-radius: 5px;
+    cursor: pointer;
+}
