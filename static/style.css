@@ -80,9 +80,9 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content:flex-start;
     margin: 10px;
-    height: 400px;
+    height: 82.46vh;
 }
 .myInput{
     margin: 6px;
