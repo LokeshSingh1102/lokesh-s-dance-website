@@ -36,12 +36,14 @@ app.get('/contact', (req, res) => {
     const params = {}
     res.status(200).render('contact.pug');
 });
-
+var flag= 0;
 app.post('/contact', (req, res) => {
     var myData = new Contact(req.body);
     console.log(myData)
     myData.save().then(() => {
-        res.send("The data has been successfully saved to database")
+        // res.send("The data has been successfully saved to database")
+        res.redirect('/contact')
+        var flag = 1;
     }).catch(() => {
         res.status(400).send("Unfortunately the data has not been saved to database")
     });
